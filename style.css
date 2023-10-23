@@ -1,0 +1,20 @@
+#logonavbar {
+    height: 150px;
+    width: 150px;
+}
+
+#backNavbar {
+    background: linear-gradient(#cbf3f0, #ffd9e2);
+}
+
+#buttonNavbar {
+    background-color: #FFFFFF;
+}
+
+.card1 {
+    margin-top: 20rem;
+}
+
+.card-body {
+    background-color: #cbf3f0;
+}
