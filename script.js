@@ -14,7 +14,7 @@ class humain {
 const carole = new humain (
     "Carole",
     "La ptite Caro",
-    "carole.jfif",
+    "carole.png",
     "51 ans",
     "Femme",
     "Homme",
@@ -25,7 +25,7 @@ const carole = new humain (
 const dani = new humain (
     "Daniel",
     "Dani",
-    "dani.jfif",
+    "dani.png",
     "46 ans",
     "Homme",
     "Femme",
@@ -35,7 +35,7 @@ const dani = new humain (
 const gilbert = new humain (
     "Gilbert",
     "Gigi",
-    "gigi.jfif",
+    "gigi.png",
     "42 ans",
     "Homme",
     "Femme",
@@ -45,7 +45,7 @@ const gilbert = new humain (
 const Hughes = new humain (
     "Hugues",
     "Hughes",
-    "hugue.jfif",
+    "hugue.png",
     "38 ans",
     "Homme",
     "Femme",
@@ -55,7 +55,7 @@ const Hughes = new humain (
 const Jeanne = new humain (
     "Jeanne",
     "Jeanneette78",
-    "jeanne.jfif",
+    "jeanne.png",
     "35 ans",
     "Femme",
     "Homme",
@@ -65,7 +65,7 @@ const Jeanne = new humain (
 const Bertrand = new humain (
     "Bertrand",
     "Beber",
-    "bertrand.jfif",
+    "bertrand.png",
     "50 ans",
     "Homme",
     "Femme",
@@ -75,7 +75,7 @@ const Bertrand = new humain (
 const Bruno = new humain (
     "Bruno",
     "Kizaru",
-    "bruno.jfif",
+    "bruno.png",
     "48 ans",
     "Homme",
     "Femme",
@@ -85,7 +85,7 @@ const Bruno = new humain (
 const christine = new humain (
     "Christine",
     "Cricri",
-    "christine.jfif",
+    "christine.png",
     "44 ans",
     "Femme",
     "Homme et femme",
@@ -95,7 +95,7 @@ const christine = new humain (
 const eric = new humain (
     "Eric",
     "Rick",
-    "eric.jfif",
+    "eric.png",
     "40 ans",
     "Homme",
     "Femme",
@@ -105,21 +105,152 @@ const eric = new humain (
 const abdallah = new humain (
     "Abdallah",
     "Abd",
-    "abdallah.jfif",
+    "abdallah.png",
     "42 ans",
     "Homme",
     "Femme",
     "Morbihan",
     "Bonjour, je suis Abdallah, ingénieur en aéronotique.",
 )
+const amandine = new humain (
+    "Amandine",
+    "Amandinedu38",
+    "amandine.png",
+    "37 ans",
+    "Femme",
+    "Homme et Femme",
+    "Isère",
+    "Salut je m'appelle Amandine, je cherche l'âme soeur.."
+)
+
 const bernadette = new humain (
     "Bernadette",
-    "Nenette",
-    "bernadette.jfif",
+    "Dedette",
+    "bernadette.png",
     "59 ans",
     "Femme",
     "Homme",
-    "Auvergne",
-    "Hey, je suis Bernadette mais tu peux m'appeler Nenette. Je kiffe netflix and chill :).",
+    "Aquitaine",
+    "Bonjour, je suis Bernadette, je kiffe Netflix & chill :) !"
+)
+const carine = new humain (
+    "Carine",
+    "Mademoiselle Carine",
+    "carine.png",
+    "34 ans",
+    "Femme",
+    "Homme",
+    "Manche",
+    "Salut, moi c'est Carine, journaliste, fan de litterature et de série"
+)
+const jose = new humain (
+    "José",
+    "Jojo",
+    "jose.png",
+    "41 ans",
+    "Homme",
+    "Femme",
+    "Haute-Savoie",
+    "Salut, je me présente : moi c'est José, restaurateur des montagnes."
+)
+const julie = new humain (
+    "Julie",
+    "Juju",
+    "julie.png",
+    "46 ans",
+    "Femme",
+    "Homme",
+    "Bouches du Rhone",
+    "Coucou, moi c'est Juju. "
+)
+const marine = new humain (
+    "Marine",
+    "Marinete",
+    "marine.png",
+    "34 ans",
+    "Femme",
+    "Homme",
+    "Ile-de-France",
+    "Salut, je suis Marine, coach sportive, dynamique et passionée de fitness"
+)
+const philippe = new humain (
+    "Philippe",
+    "Phiphi",
+    "philippe.png",
+    "54 ans",
+    "Homme",
+    "Femme",
+    "Rhones-Alpes",
+    "Bonjour, moi c'est Philippe, agriculteur, toujours en forme !"
+)
+const pierre = new humain (
+    "Pierre",
+    "Pierrot",
+    "pierre.png",
+    "35 ans",
+    "Homme",
+    "Femme",
+    "Loire-et-Cher",
+    "Salut je m'appelle Pierre, j'aime le rugby et les bières !"
+)
+const sandrine = new humain (
+    "Sandrine",
+    "Sandrinedu45",
+    "sandrine.png",
+    "57 ans",
+    "Femme",
+    "Homme",
+    "Loire-Atlantique",
+    "Bonjour, moi c'est Sandrine, je suis passionnée par la cuisine."
+)
+const silvie = new humain (
+    "Sylvie",
+    "Sysy",
+    "silvie.png",
+    "40 ans",
+    "Femme",
+    "Homme",
+    "Gard",
+    "Enchantée, je m'appelle Sylvie. Je suis voyage à travers le monde à la recherche de la paix spirituelle."
 )
 
+const veronique = new humain (
+    "Véronique",
+    "véro94",
+    "véronique.png",
+    "47 ans",
+    "Femme",
+    "Homme",
+    "Ile-de-France",
+    "Salut, je m'appelle Véronique. Je cherche à me débarasser du célibat !"
+)
+const virginie = new humain (
+    "Véronique",
+    "vivi",
+    "virginie.png",
+    "38 ans",
+    "Femme",
+    "Homme",
+    "Dordogne",
+    "Hello ! je suis Virginie, professeure des écoles, j'ai horreur des fautes d'orthographe !!!"
+)
+const xavier = new humain (
+    "Xavier",
+    "Xav",
+    "xavier.png",
+    "44 ans",
+    "Homme",
+    "Femme",
+    "Somme",
+    "Bonjour. Je suis Xavier, un grand amoureux des reptiles."
+)
+const yves = new humain (
+    "Yves",
+    "Yvesdu06",
+    "véronique.png",
+    "52 ans",
+    "Homme",
+    "Femme",
+    "Alpes-Maritime",
+    "Salut !  moi c'est Yves, toujours en bateau, j'adore naviguer."
+)
