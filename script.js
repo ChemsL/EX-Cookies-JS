@@ -50,12 +50,6 @@ btn1 = document.getElementById('btn1')
 btn1.addEventListener('click', function(){
     window.location.href = `profil.html?idValue=${this.id}`
 })
-// const nom = document.getElementById("nom");
 
-// const resultat = document.getElementById("resultat")
-
-// const urlll = new URLSearchParams(window.location.search);
-// const nomValue = urlll.get("nom");
-// resultat.textContent =
 
 
