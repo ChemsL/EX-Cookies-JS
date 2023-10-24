@@ -24,6 +24,9 @@
   background-color: #ffd9e2 !important;
   padding-bottom: 1rem;
 }
+.card-body {
+  background-color: #cbf3f0;
+}
 
 #index {
   visibility: hidden;
@@ -59,8 +62,11 @@ footer {
     margin: 11rem auto 0 auto;
   }
 #retour {
-  margin-top: 20rem;
-  text-decoration: none;
-  font-size: 2rem;
-}/*# sourceMappingURL=style.css.map */
+  margin-top: 20rem !important;
+  margin-left: 3rem;
+}
 
+.btnRetour {
+  background-color: linear-gradient(#cbf3f0, #ffd9e2);
+  font-size: 2rem;
+}
