@@ -39,12 +39,10 @@ form {
   border-radius: 15%;
   background-color: rgb(85, 85, 85);
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
 
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #abbaba;
-    color: #000;
-  }
-  
+#retour {
+  margin-top: 20rem;
+  text-decoration: none;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
