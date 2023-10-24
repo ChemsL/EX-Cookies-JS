@@ -35,14 +35,14 @@
                             </div>
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">ACCUEIL</a>
+                                    <li id="navall" class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Tout les membres</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li id="navhommes" class="nav-item">
                                         <a class="nav-link" href="#">Hommes</a>
                                     </li>
 
-                                    <li class="nav-item">
+                                    <li id="navfemmes" class="nav-item">
                                         <a class="nav-link" href="#">Femmes</a>
                                     </li>
                                 </ul>
@@ -81,6 +81,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="people.js"></script>
     <script src="script.js"></script>
 
     <script>
@@ -88,35 +89,10 @@
 
 
 
-        const celib = [
-            abdallah,
-            amandine,
-            bernadette,
-            bertrand,
-            bruno,
-            carine,
-            carole,
-            christine,
-            dani,
-            eric,
-            gilbert,
-            hugues,
-            jeanne,
-            jose,
-            julie,
-            marine,
-            philippe,
-            pierre,
-            sandrine,
-            silvie,
-            veronique,
-            virginie,
-            xavier,
-            yves,
-        ]
+       
 
         for (let i = 0; i < celib.length; i++) {
-            const cardHtml = celib[i].card();
+            const cardHtml = celib[i].card(i);
             container.innerHTML += cardHtml;
         }
 
