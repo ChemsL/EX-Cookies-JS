@@ -18,7 +18,7 @@ class humain {
         <img src="img/${this.picture}" class="card-img-top" alt="${this.id}">
         <div class="${background}">
             <h5 class="card-title">${this.id}, ${this.age}</h5>
-            <a href="#" id="btn1" class="btn btn-light"><b>Découvrir</b></a>
+            <a href="profil.html" id="btn1" class="btn btn-light"><b>Découvrir</b></a>
         </div>
     </div>
     `
