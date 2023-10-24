@@ -11,14 +11,16 @@ class humain {
     }
     card() {
         let background = this.gender == "Femme" ? "card-body-female" : "card-body-male"
-
+        function goProfile(id) {
+            window.location.href = `profil.html?id=${id}`;
+        }
 
         return `
     <div id="card2" class="card col-3 px-0 m-3 text-center shadow border border-3">
         <img src="img/${this.picture}" class="card-img-top" alt="${this.id}">
         <div class="${background}">
-            <h5 class="card-title">${this.id}, ${this.age}</h5>
-            <a href="profil.html" id="btn1" class="btn btn-light"><b>Découvrir</b></a>
+            <h5 class="card-title">${this.pseudo}, ${this.age}</h5>
+            <button onclick="goProfile(${this.id})" id="btn1" class="btn btn-light"><b>Découvrir</b></button>
         </div>
     </div>
     `
@@ -26,8 +28,8 @@ class humain {
 }
 
 const carole = new humain(
+    "1",
     "Carole",
-    "La ptite Caro",
     "carole.png",
     "51 ans",
     "Femme",
@@ -37,8 +39,8 @@ const carole = new humain(
 )
 
 const dani = new humain(
+    "2",
     "Daniel",
-    "Dani",
     "dani.png",
     "46 ans",
     "Homme",
@@ -47,8 +49,8 @@ const dani = new humain(
     "Salut, moi c'est Dani, fan de pétanque et de pastis !"
 )
 const gilbert = new humain(
+    "3",
     "Gilbert",
-    "Gigi",
     "gilbert.png",
     "42 ans",
     "Homme",
@@ -57,7 +59,7 @@ const gilbert = new humain(
     "Bonjour, je suis Gilbert, passioné de musique classique, je suis malvoyant."
 )
 const hugues = new humain(
-    "Hugues",
+    "4",
     "Hughes",
     "hugue.png",
     "38 ans",
@@ -67,8 +69,8 @@ const hugues = new humain(
     "Hello world ! Je m'appellen Hugues, je suis développeur Web."
 )
 const jeanne = new humain(
+    "5",
     "Jeanne",
-    "Jeanneette78",
     "jeanne.png",
     "35 ans",
     "Femme",
@@ -77,8 +79,8 @@ const jeanne = new humain(
     "Bonjour, je suis Jeanne, pétillante, je n'ai qu'une passion : les chats !"
 )
 const bertrand = new humain(
+    "6",
     "Bertrand",
-    "Beber",
     "bertrand.png",
     "50 ans",
     "Homme",
@@ -87,8 +89,8 @@ const bertrand = new humain(
     "Bonjour, je suis Bertrand, entrepreneur d'une PME, et fan de finances."
 )
 const bruno = new humain(
+    "7",
     "Bruno",
-    "Kizaru",
     "bruno.png",
     "48 ans",
     "Homme",
@@ -97,8 +99,8 @@ const bruno = new humain(
     "Bonjour, je suis Bruno j'adore les animés, de jeux vidéos, et les brocantes !"
 )
 const christine = new humain(
+    "8",
     "Christine",
-    "Cricri",
     "christine.png",
     "44 ans",
     "Femme",
@@ -107,8 +109,8 @@ const christine = new humain(
     "Hello, moi c'est Christine, en harmonie avec la nature, 100% écolo, j'aime le terroir !",
 )
 const eric = new humain(
+    "9",
     "Eric",
-    "Rick",
     "eric.png",
     "40 ans",
     "Homme",
@@ -117,8 +119,8 @@ const eric = new humain(
     "Bonjour, enchanté je suis Eric, j'aime m'asseoir en tailleur pour ecouter du reggae, peace & love.",
 )
 const abdallah = new humain(
+    "10",
     "Abdallah",
-    "Abd",
     "abdallah.png",
     "42 ans",
     "Homme",
@@ -127,8 +129,8 @@ const abdallah = new humain(
     "Bonjour, je suis Abdallah, ingénieur en aéronotique.",
 )
 const amandine = new humain(
+    "11",
     "Amandine",
-    "Amandinedu38",
     "amandine.png",
     "37 ans",
     "Femme",
@@ -138,8 +140,8 @@ const amandine = new humain(
 )
 
 const bernadette = new humain(
+    "12",
     "Bernadette",
-    "Dedette",
     "bernadette.png",
     "59 ans",
     "Femme",
@@ -148,8 +150,8 @@ const bernadette = new humain(
     "Bonjour, je suis Bernadette, je kiffe Netflix & chill :) !"
 )
 const carine = new humain(
+    "13",
     "Carine",
-    "Mademoiselle Carine",
     "carine.png",
     "34 ans",
     "Femme",
@@ -158,8 +160,8 @@ const carine = new humain(
     "Salut, moi c'est Carine, journaliste, fan de litterature et de série"
 )
 const jose = new humain(
+    "14",
     "José",
-    "Jojo",
     "josé.png",
     "41 ans",
     "Homme",
@@ -168,8 +170,8 @@ const jose = new humain(
     "Salut, je me présente : moi c'est José, restaurateur des montagnes."
 )
 const julie = new humain(
+    "15",
     "Julie",
-    "Juju",
     "julie.png",
     "46 ans",
     "Femme",
@@ -178,8 +180,8 @@ const julie = new humain(
     "Coucou, moi c'est Juju. "
 )
 const marine = new humain(
+    "16",
     "Marine",
-    "Marinete",
     "marine.png",
     "34 ans",
     "Femme",
@@ -188,8 +190,8 @@ const marine = new humain(
     "Salut, je suis Marine, coach sportive, dynamique et passionée de fitness"
 )
 const philippe = new humain(
+    "17",
     "Philippe",
-    "Phiphi",
     "philippe.png",
     "54 ans",
     "Homme",
@@ -198,8 +200,8 @@ const philippe = new humain(
     "Bonjour, moi c'est Philippe, agriculteur, toujours en forme !"
 )
 const pierre = new humain(
+    "18",
     "Pierre",
-    "Pierrot",
     "pierre.png",
     "35 ans",
     "Homme",
@@ -208,8 +210,8 @@ const pierre = new humain(
     "Salut je m'appelle Pierre, j'aime le rugby et les bières !"
 )
 const sandrine = new humain(
+    "19",
     "Sandrine",
-    "Sandrinedu45",
     "sandrine.png",
     "57 ans",
     "Femme",
@@ -218,8 +220,8 @@ const sandrine = new humain(
     "Bonjour, moi c'est Sandrine, je suis passionnée par la cuisine."
 )
 const silvie = new humain(
+    "20",
     "Sylvie",
-    "Sysy",
     "silvie.png",
     "40 ans",
     "Femme",
@@ -229,8 +231,8 @@ const silvie = new humain(
 )
 
 const veronique = new humain(
+    "21",
     "Véronique",
-    "véro94",
     "véronique.png",
     "47 ans",
     "Femme",
@@ -239,8 +241,8 @@ const veronique = new humain(
     "Salut, je m'appelle Véronique. Je cherche à me débarasser du célibat !"
 )
 const virginie = new humain(
+    "22",
     "Véronique",
-    "vivi",
     "virginie.png",
     "38 ans",
     "Femme",
@@ -249,8 +251,8 @@ const virginie = new humain(
     "Hello ! je suis Virginie, professeure des écoles, j'ai horreur des fautes d'orthographe !!!"
 )
 const xavier = new humain(
+    "23",
     "Xavier",
-    "Xav",
     "xavier.png",
     "44 ans",
     "Homme",
@@ -259,8 +261,8 @@ const xavier = new humain(
     "Bonjour. Je suis Xavier, un grand amoureux des reptiles."
 )
 const yves = new humain(
+    "24",
     "Yves",
-    "Yvesdu06",
     "yves.png",
     "52 ans",
     "Homme",
@@ -275,17 +277,8 @@ function couleur() {
     }
 } 
 
-let idValue 
-const params = new URLSearchParams(window.location.search);
 
-btn1 = document.getElementById('btn1')
-btn1.addEventListener('click', function(){
-    window.location.href = `profil.html?idValue=${this.id}`
-})
-// const nom = document.getElementById("nom");
 
-// const resultat = document.getElementById("resultat")
-
-// const urlll = new URLSearchParams(window.location.search);
-// const nomValue = urlll.get("nom");
-// resultat.textContent =
+function goProfile(index){
+    window.location.href = `profil.html?index=${index}`
+}
