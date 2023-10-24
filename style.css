@@ -11,21 +11,15 @@
   background-color: #FFFFFF;
 }
 
-.card {
-  margin-top: 20rem;
+
+.card-body-female {
+  background-color: #ffd9e2 !important;
+  margin-bottom: 1rem;
 }
 
 .card-body-male {
   background-color: #cbf3f0 !important;
-  padding-bottom: 1rem;
-}
-
-.card-body-female {
-  background-color: #ffd9e2 !important;
-  padding-bottom: 1rem;
-}
-.card-body {
-  background-color: #cbf3f0;
+  margin-bottom: 1rem;
 }
 
 #index {
@@ -50,23 +44,22 @@ form {
   color: white;
 }
 
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #abbaba;
-    color: #000;
-  }
-
-  #container {
-    width: 80vw;
-    margin: 11rem auto 0 auto;
-  }
 #retour {
-  margin-top: 20rem !important;
   margin-left: 3rem;
 }
 
 .btnRetour {
   background-color: linear-gradient(#cbf3f0, #ffd9e2);
   font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #abbaba;
+  color: #000;
+}
+
+#container {
+  margin-top: 5rem;
 }

@@ -91,35 +91,10 @@
 
 
 
-        const celib = [
-            abdallah,
-            amandine,
-            bernadette,
-            bertrand,
-            bruno,
-            carine,
-            carole,
-            christine,
-            dani,
-            eric,
-            gilbert,
-            hugues,
-            jeanne,
-            jose,
-            julie,
-            marine,
-            philippe,
-            pierre,
-            sandrine,
-            silvie,
-            veronique,
-            virginie,
-            xavier,
-            yves,
-        ]
+       
 
         for (let i = 0; i < celib.length; i++) {
-            const cardHtml = celib[i].card();
+            const cardHtml = celib[i].card(i);
             container.innerHTML += cardHtml;
         }
 

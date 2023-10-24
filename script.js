@@ -1,3 +1,5 @@
+
+
 function couleur() {
     if (this.gender == "Femme") {
         document.card2.style.backgroundColor = "#ffd9e2"
