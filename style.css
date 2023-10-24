@@ -15,14 +15,8 @@
   margin-top: 20rem;
 }
 
-.card-body-male {
+.card-body {
   background-color: #cbf3f0;
-  padding-bottom: 1rem;
-}
-
-.card-body-female {
-  background-color: #ffd9e2;
-  padding-bottom: 1rem;
 }
 
 #index {
@@ -47,22 +41,12 @@ form {
   color: white;
 }
 
-<<<<<<< HEAD
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #abbaba;
-    color: #000;
-  }
-
-  #container {
-    width: 80vw;
-    margin: 11rem auto 0 auto;
-  }
-=======
 #retour {
-  margin-top: 20rem;
-  text-decoration: none;
+  margin-top: 20rem !important;
+  margin-left: 3rem;
+}
+
+.btnRetour {
+  background-color: linear-gradient(#cbf3f0, #ffd9e2);
   font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
->>>>>>> 233ebb5a5b3a9d73316c884dbf09f834f9bbc44b
