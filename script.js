@@ -10,10 +10,13 @@ class humain {
         this.description = description
     }
     card() {
+        let background = this.gender == "Femme" ? "card-body-female" : "card-body-male"
+
+
         return `
-    <div class="card text-center shadow border border-3" style="width: 18rem;">
+    <div id="card2" class="card col-3 px-0 m-3 text-center shadow border border-3">
         <img src="img/${this.picture}" class="card-img-top" alt="${this.id}">
-        <div class="card-body">
+        <div class="${background}">
             <h5 class="card-title">${this.id}, ${this.age}</h5>
             <a href="#" id="btn1" class="btn btn-light"><b>Découvrir</b></a>
         </div>
@@ -258,7 +261,7 @@ const xavier = new humain(
 const yves = new humain(
     "Yves",
     "Yvesdu06",
-    "véronique.png",
+    "yves.png",
     "52 ans",
     "Homme",
     "Femme",
@@ -266,3 +269,8 @@ const yves = new humain(
     "Salut !  moi c'est Yves, toujours en bateau, j'adore naviguer."
 )
 
+function couleur() {
+    if (this.gender == "Femme") {
+        document.card2.style.backgroundColor = "#ffd9e2"
+    }
+} 
