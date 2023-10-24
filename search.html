@@ -58,17 +58,11 @@
 
 
 
-    <div class="container">
+    <div id="container" class="container">
 
         <main>
 
-            <div class="card text-center shadow border border-3" style="width: 18rem;">
-                <img src="img/abdallah.png" class="card-img-top" alt="Image Abdallah">
-                <div class="card-body">
-                    <h5 class="card-title">Abdallah, 42ans</h5>
-                    <a href="#" id="btn1" class="btn btn-light"><b>Découvrir</b></a>
-                </div>
-            </div>
+           
 
 
         </main>
@@ -94,6 +88,45 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <script>
+
+
+
+
+        const celib = [
+            abdallah,
+            amandine,
+            bernadette,
+            bertrand,
+            bruno,
+            carine,
+            carole,
+            christine,
+            dani,
+            eric,
+            gilbert,
+            hugues,
+            jeanne,
+            jose,
+            julie,
+            marine,
+            philippe,
+            pierre,
+            sandrine,
+            silvie,
+            veronique,
+            virginie,
+            xavier,
+            yves,
+        ]
+
+        for (let i = 0; i < celib.length; i++) {
+            const cardHtml = celib[i].card();
+            container.innerHTML += cardHtml;
+        }
+
+    </script>
 </body>
 
 </html>

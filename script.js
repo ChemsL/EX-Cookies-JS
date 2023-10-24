@@ -1,17 +1,28 @@
 class humain {
-    constructor(id, pseudo, picture, age, gender, search, region, description){
-    this.id = id
-    this.pseudo = pseudo
-    this.picture = picture
-    this.age = age
-    this.gender = gender
-    this.search = search
-    this.region = region
-    this.description = description
-}
+    constructor(id, pseudo, picture, age, gender, search, region, description) {
+        this.id = id
+        this.pseudo = pseudo
+        this.picture = picture
+        this.age = age
+        this.gender = gender
+        this.search = search
+        this.region = region
+        this.description = description
+    }
+    card() {
+        return `
+    <div class="card text-center shadow border border-3" style="width: 18rem;">
+        <img src="img/${this.picture}" class="card-img-top" alt="${this.id}">
+        <div class="card-body">
+            <h5 class="card-title">${this.id}, ${this.age}</h5>
+            <a href="#" id="btn1" class="btn btn-light"><b>Découvrir</b></a>
+        </div>
+    </div>
+    `
+    }
 }
 
-const carole = new humain (
+const carole = new humain(
     "Carole",
     "La ptite Caro",
     "carole.png",
@@ -19,10 +30,10 @@ const carole = new humain (
     "Femme",
     "Homme",
     "Franche-Compté",
-    "Passionée de rando, j'ai également un penchant our les petit jeunes ;)"
+    "Passionée de rando, j'ai également un penchant pour les petit jeunes ;)"
 )
 
-const dani = new humain (
+const dani = new humain(
     "Daniel",
     "Dani",
     "dani.png",
@@ -32,17 +43,17 @@ const dani = new humain (
     "Midi-Pyrénnée",
     "Salut, moi c'est Dani, fan de pétanque et de pastis !"
 )
-const gilbert = new humain (
+const gilbert = new humain(
     "Gilbert",
     "Gigi",
-    "gigi.png",
+    "gilbert.png",
     "42 ans",
     "Homme",
     "Femme",
     "Ile-de-France",
     "Bonjour, je suis Gilbert, passioné de musique classique, je suis malvoyant."
 )
-const Hughes = new humain (
+const hugues = new humain(
     "Hugues",
     "Hughes",
     "hugue.png",
@@ -50,9 +61,9 @@ const Hughes = new humain (
     "Homme",
     "Femme",
     "Ile-de-France",
-    "Hello world ! Je m'appellen Hugues, je suis développeur."
+    "Hello world ! Je m'appellen Hugues, je suis développeur Web."
 )
-const Jeanne = new humain (
+const jeanne = new humain(
     "Jeanne",
     "Jeanneette78",
     "jeanne.png",
@@ -62,7 +73,7 @@ const Jeanne = new humain (
     "Ile-de-France",
     "Bonjour, je suis Jeanne, pétillante, je n'ai qu'une passion : les chats !"
 )
-const Bertrand = new humain (
+const bertrand = new humain(
     "Bertrand",
     "Beber",
     "bertrand.png",
@@ -72,7 +83,7 @@ const Bertrand = new humain (
     "Nord Pas de Calais",
     "Bonjour, je suis Bertrand, entrepreneur d'une PME, et fan de finances."
 )
-const Bruno = new humain (
+const bruno = new humain(
     "Bruno",
     "Kizaru",
     "bruno.png",
@@ -80,9 +91,9 @@ const Bruno = new humain (
     "Homme",
     "Femme",
     "Seine-Maritime",
-    "Bonjour, je suis Bruno j'adore les animés, de jeux vidéos, et de brocantes !"
+    "Bonjour, je suis Bruno j'adore les animés, de jeux vidéos, et les brocantes !"
 )
-const christine = new humain (
+const christine = new humain(
     "Christine",
     "Cricri",
     "christine.png",
@@ -92,7 +103,7 @@ const christine = new humain (
     "Bretagne",
     "Hello, moi c'est Christine, en harmonie avec la nature, 100% écolo, j'aime le terroir !",
 )
-const eric = new humain (
+const eric = new humain(
     "Eric",
     "Rick",
     "eric.png",
@@ -100,9 +111,9 @@ const eric = new humain (
     "Homme",
     "Femme",
     "Picardie",
-    "Bonjour, enchanté je suis Eric, peace & love.",
+    "Bonjour, enchanté je suis Eric, j'aime m'asseoir en tailleur pour ecouter du reggae, peace & love.",
 )
-const abdallah = new humain (
+const abdallah = new humain(
     "Abdallah",
     "Abd",
     "abdallah.png",
@@ -112,7 +123,7 @@ const abdallah = new humain (
     "Morbihan",
     "Bonjour, je suis Abdallah, ingénieur en aéronotique.",
 )
-const amandine = new humain (
+const amandine = new humain(
     "Amandine",
     "Amandinedu38",
     "amandine.png",
@@ -123,7 +134,7 @@ const amandine = new humain (
     "Salut je m'appelle Amandine, je cherche l'âme soeur.."
 )
 
-const bernadette = new humain (
+const bernadette = new humain(
     "Bernadette",
     "Dedette",
     "bernadette.png",
@@ -133,7 +144,7 @@ const bernadette = new humain (
     "Aquitaine",
     "Bonjour, je suis Bernadette, je kiffe Netflix & chill :) !"
 )
-const carine = new humain (
+const carine = new humain(
     "Carine",
     "Mademoiselle Carine",
     "carine.png",
@@ -143,17 +154,17 @@ const carine = new humain (
     "Manche",
     "Salut, moi c'est Carine, journaliste, fan de litterature et de série"
 )
-const jose = new humain (
+const jose = new humain(
     "José",
     "Jojo",
-    "jose.png",
+    "josé.png",
     "41 ans",
     "Homme",
     "Femme",
     "Haute-Savoie",
     "Salut, je me présente : moi c'est José, restaurateur des montagnes."
 )
-const julie = new humain (
+const julie = new humain(
     "Julie",
     "Juju",
     "julie.png",
@@ -163,7 +174,7 @@ const julie = new humain (
     "Bouches du Rhone",
     "Coucou, moi c'est Juju. "
 )
-const marine = new humain (
+const marine = new humain(
     "Marine",
     "Marinete",
     "marine.png",
@@ -173,7 +184,7 @@ const marine = new humain (
     "Ile-de-France",
     "Salut, je suis Marine, coach sportive, dynamique et passionée de fitness"
 )
-const philippe = new humain (
+const philippe = new humain(
     "Philippe",
     "Phiphi",
     "philippe.png",
@@ -183,7 +194,7 @@ const philippe = new humain (
     "Rhones-Alpes",
     "Bonjour, moi c'est Philippe, agriculteur, toujours en forme !"
 )
-const pierre = new humain (
+const pierre = new humain(
     "Pierre",
     "Pierrot",
     "pierre.png",
@@ -193,7 +204,7 @@ const pierre = new humain (
     "Loire-et-Cher",
     "Salut je m'appelle Pierre, j'aime le rugby et les bières !"
 )
-const sandrine = new humain (
+const sandrine = new humain(
     "Sandrine",
     "Sandrinedu45",
     "sandrine.png",
@@ -203,7 +214,7 @@ const sandrine = new humain (
     "Loire-Atlantique",
     "Bonjour, moi c'est Sandrine, je suis passionnée par la cuisine."
 )
-const silvie = new humain (
+const silvie = new humain(
     "Sylvie",
     "Sysy",
     "silvie.png",
@@ -214,7 +225,7 @@ const silvie = new humain (
     "Enchantée, je m'appelle Sylvie. Je suis voyage à travers le monde à la recherche de la paix spirituelle."
 )
 
-const veronique = new humain (
+const veronique = new humain(
     "Véronique",
     "véro94",
     "véronique.png",
@@ -224,7 +235,7 @@ const veronique = new humain (
     "Ile-de-France",
     "Salut, je m'appelle Véronique. Je cherche à me débarasser du célibat !"
 )
-const virginie = new humain (
+const virginie = new humain(
     "Véronique",
     "vivi",
     "virginie.png",
@@ -234,7 +245,7 @@ const virginie = new humain (
     "Dordogne",
     "Hello ! je suis Virginie, professeure des écoles, j'ai horreur des fautes d'orthographe !!!"
 )
-const xavier = new humain (
+const xavier = new humain(
     "Xavier",
     "Xav",
     "xavier.png",
@@ -244,7 +255,7 @@ const xavier = new humain (
     "Somme",
     "Bonjour. Je suis Xavier, un grand amoureux des reptiles."
 )
-const yves = new humain (
+const yves = new humain(
     "Yves",
     "Yvesdu06",
     "véronique.png",
@@ -254,3 +265,4 @@ const yves = new humain (
     "Alpes-Maritime",
     "Salut !  moi c'est Yves, toujours en bateau, j'adore naviguer."
 )
+
