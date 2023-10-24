@@ -13,7 +13,7 @@
 <body>
 
     <header>
-
+<h1 id="mineur"></h1>
         <nav id="backNavbar" class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a href="index.html"><img class="border rounded-circle" id="logonavbar" src="img/Passions.png"
@@ -63,7 +63,15 @@
 
     <main>
 
-
+<div id="index">
+    <div>
+        <form action="search.html">
+        <input type="checkbox" id="scales" name="cgu" unchecked />
+        <label for=cgu">J'ai lu et j'accepte <a href="">les conditions générales d'utilisation</a>.</label>
+        <button id="acceptCGU">Accepter</button>
+    </form>
+      </div>
+</div>
     </main>
 
 
@@ -85,14 +93,18 @@
     <script src="script.js"></script>
 
     <script>
+
         var age = prompt("Quel âge avez-vous ?");
-        var h1Element = document.querySelector("h1");
+        var mineur = document.querySelector("#mineur");
+        let index = document.querySelector("#index")
+        let backNavbar = document.querySelector("#backNavbar")
 
         if (age <= 17) {
-            h1Element.innerHTML = "ACCES REFUSE AUX MINEURS !!!";
+            backNavbar.style.visibility = "hidden"
+            mineur.innerHTML = "ACCES REFUSE AUX MINEURS !!!";
         }
         else {
-
+index.style.visibility = "visible"
         }
     </script>
 

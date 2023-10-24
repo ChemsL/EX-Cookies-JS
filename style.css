@@ -1,20 +1,42 @@
 #logonavbar {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
 
 #backNavbar {
-    background: linear-gradient(#cbf3f0, #ffd9e2);
+  background: linear-gradient(#cbf3f0, #ffd9e2);
 }
 
 #buttonNavbar {
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
-.card1 {
-    margin-top: 20rem;
+.card {
+  margin-top: 20rem;
 }
 
 .card-body {
-    background-color: #cbf3f0;
+  background-color: #cbf3f0;
 }
+
+#index {
+  visibility: hidden;
+  margin-top: 20rem;
+}
+
+#mineur {
+  color: red;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#acceptCGU {
+  border-radius: 15%;
+  background-color: rgb(85, 85, 85);
+  color: white;
+}/*# sourceMappingURL=style.css.map */
