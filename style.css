@@ -11,10 +11,18 @@
     background-color: #FFFFFF;
 }
 
-.card1 {
+.card {
     margin-top: 20rem;
 }
 
 .card-body {
     background-color: #cbf3f0;
 }
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #abbaba;
+    color: #000;
+  }
+  
