@@ -16,12 +16,12 @@
 }
 
 .card-body-male {
-  background-color: #cbf3f0;
+  background-color: #cbf3f0 !important;
   padding-bottom: 1rem;
 }
 
 .card-body-female {
-  background-color: #ffd9e2;
+  background-color: #ffd9e2 !important;
   padding-bottom: 1rem;
 }
 
@@ -47,7 +47,6 @@ form {
   color: white;
 }
 
-<<<<<<< HEAD
 footer {
     text-align: center;
     padding: 5px;
@@ -59,10 +58,9 @@ footer {
     width: 80vw;
     margin: 11rem auto 0 auto;
   }
-=======
 #retour {
   margin-top: 20rem;
   text-decoration: none;
   font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
->>>>>>> 233ebb5a5b3a9d73316c884dbf09f834f9bbc44b
+
