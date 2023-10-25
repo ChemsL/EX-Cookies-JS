@@ -44,10 +44,6 @@ form {
   color: white;
 }
 
-#retour {
-  margin-left: 3rem;
-}
-
 .btnRetour {
   background-color: linear-gradient(#cbf3f0, #ffd9e2);
   font-size: 2rem;
@@ -70,6 +66,3 @@ footer {
   margin: 11rem auto 0 auto;
 }
 
-#btnRetour {
-margin-bottom: 1rem;
-}
