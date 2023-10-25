@@ -12,14 +12,14 @@
 }
 
 
-.card-body-female {
-  background-color: #ffd9e2 !important;
-  margin-bottom: 1rem;
-}
-
 .card-body-male {
   background-color: #cbf3f0 !important;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-body-female {
+  background-color: #ffd9e2 !important;
+  padding-bottom: 1rem;
 }
 
 #index {
@@ -61,5 +61,6 @@ footer {
 }
 
 #container {
-  margin-top: 5rem;
+  width: 80vw;
+  margin: 11rem auto 0 auto;
 }
