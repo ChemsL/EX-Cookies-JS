@@ -48,7 +48,11 @@ document.getElementById('navall').addEventListener('click', function () {
 let idValue
 const params = new URLSearchParams(window.location.search);
 
-
+$(document).ready(function () {
+    $('#navhommes, #navfemmes, #navall').on('click', function () {
+        $('#offcanvasNavbar').offcanvas('hide');
+    });
+});
 
 
 
