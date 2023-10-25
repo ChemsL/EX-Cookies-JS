@@ -48,16 +48,8 @@ document.getElementById('navall').addEventListener('click', function () {
 let idValue 
 const params = new URLSearchParams(window.location.search);
 
-btn1 = document.getElementById('btn1')
-btn1.addEventListener('click', function(){
-    window.location.href = `profil.html?idValue=${this.id}`
-})
 
-if (document.cookie.split(';').some((item) => item.trim().startsWith('acceptCGU'))) {
 
-} else {
-    window.location.href = "index.html";
-}
 
 
 
