@@ -53,5 +53,3 @@ btn1.addEventListener('click', function(){
     window.location.href = `profil.html?idValue=${this.id}`
 })
 
-
-
