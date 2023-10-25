@@ -45,5 +45,12 @@ document.getElementById('navall').addEventListener('click', function () {
 })
 
 
-let idValue 
+let idValue
 const params = new URLSearchParams(window.location.search);
+
+
+
+
+
+
+

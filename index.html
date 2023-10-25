@@ -57,7 +57,7 @@
 
             <div id="index">
                 <div>
-                    <form action="search.html">
+                    <form action="">
                         <input type="checkbox" id="scales" name="cgu" unchecked />
                         <label for="cgu">J'ai lu et j'accepte <a href="">les conditions générales
                                 d'utilisation</a>.</label>
@@ -83,10 +83,25 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
-
     <script>
-
+        document.getElementById("scales").addEventListener('click', function () {
+            document.cookie = "cgu=on"
+        })
+        function getCookie(name) {
+            const cookies = document.cookie.split('; ')
+            const value = cookies
+                .find(c => c.startsWith(name + "="))
+                ?.split('=')[1]
+            if (value === undefined) {
+                return false
+            } else {
+                return true
+            }
+        }
+        if (getCookie('cgu')) {
+            window.location.href = 'search.html';
+            exit()
+        }
         var age = prompt("Quel âge avez-vous ?");
         var mineur = document.querySelector("#mineur");
         let index = document.querySelector("#index")

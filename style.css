@@ -43,10 +43,6 @@ form {
   color: white;
 }
 
-#retour {
-  margin-left: 3rem;
-}
-
 .btnRetour {
   background-color: linear-gradient(#cbf3f0, #ffd9e2);
   font-size: 2rem;
@@ -57,4 +53,14 @@ footer {
   padding: 5px;
   background-color: #abbaba;
   color: #000;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#container {
+  width: 80vw;
+  margin: 11rem auto 0 auto;
+}
+
+#nom {
+  width: 80vw;
+  margin: 11rem auto 0 auto;
+}
