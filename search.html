@@ -87,12 +87,21 @@
     <script src="script.js"></script>
 
     <script>
-
-
-
-
-
-
+        if (!getCookie('cgu')) {
+      window.location.href = 'index.html';
+      exit()
+    }
+    function getCookie(name) {
+      const cookies = document.cookie.split('; ')
+      const value = cookies
+        .find(c => c.startsWith(name + "="))
+        ?.split('=')[1]
+      if (value === undefined) {
+        return false
+      } else {
+        return true
+      }
+    }
         for (let i = 0; i < celib.length; i++) {
             const cardHtml = celib[i].card(i);
             container.innerHTML += cardHtml;
